@@ -6,6 +6,7 @@ import { Legend } from "@/components/legend"
 import { MajorFilter } from "@/components/major-filter"
 import { BlockDetails } from "@/components/block-details"
 import { stressData } from "@/lib/stress-data"
+import { StressAnimation } from "@/components/stress-animation"
 
 export interface SelectedBlock {
   major: string
@@ -49,6 +50,9 @@ export default function Home() {
         {/* Main Content */}
         <main className="flex-1 p-6">
           <div className="space-y-6">
+            {/* Stress Animation Button */}
+            <StressAnimation selectedMajor={selectedMajor} />
+
             {/* Mural Grid */}
             <div className="rounded-lg border border-border bg-card p-6">
               <MuralGrid

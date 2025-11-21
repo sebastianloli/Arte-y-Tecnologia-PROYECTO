@@ -4,19 +4,19 @@ export function Legend() {
       <div className="flex items-center gap-3">
         <div className="h-6 w-6 rounded bg-blue-400" />
         <span className="text-sm text-foreground">
-          <strong>Azul:</strong> Menor nivel de estrés
+          <strong>Blue:</strong> Lowest stress level
         </span>
       </div>
       <div className="flex items-center gap-3">
         <div className="h-6 w-6 rounded bg-purple-400" />
         <span className="text-sm text-foreground">
-          <strong>Morado:</strong> Mediano nivel de estrés
+          <strong>Purple:</strong> Medium stress level
         </span>
       </div>
       <div className="flex items-center gap-3">
         <div className="h-6 w-6 rounded bg-red-400" />
         <span className="text-sm text-foreground">
-          <strong>Rojo:</strong> Mayor nivel de estrés
+          <strong>Red:</strong> Highest stress level
         </span>
       </div>
     </div>

@@ -11,17 +11,19 @@ export function MajorFilter({ majors, selectedMajor, onSelectMajor }: MajorFilte
     <div className="space-y-2">
       <button
         onClick={() => onSelectMajor(null)}
-        className={`block w-full rounded-md px-4 py-2 text-left text-sm font-medium transition-colors ${selectedMajor === null ? "bg-primary text-primary-foreground" : "border border-border hover:bg-muted"
-          }`}
+        className={`block w-full rounded-md px-4 py-2 text-left text-sm font-medium transition-colors ${
+          selectedMajor === null ? "bg-primary text-primary-foreground" : "border border-border hover:bg-muted"
+        }`}
       >
-        Todas las carreras
+        All Majors
       </button>
       {majors.map((major) => (
         <button
           key={major}
           onClick={() => onSelectMajor(major)}
-          className={`block w-full rounded-md px-4 py-2 text-left text-sm font-medium transition-colors ${selectedMajor === major ? "bg-primary text-primary-foreground" : "border border-border hover:bg-muted"
-            }`}
+          className={`block w-full rounded-md px-4 py-2 text-left text-sm font-medium transition-colors ${
+            selectedMajor === major ? "bg-primary text-primary-foreground" : "border border-border hover:bg-muted"
+          }`}
         >
           {major}
         </button>
