@@ -15,7 +15,7 @@ export function MajorFilter({ majors, selectedMajor, onSelectMajor }: MajorFilte
           selectedMajor === null ? "bg-primary text-primary-foreground" : "border border-border hover:bg-muted"
         }`}
       >
-        All Majors
+        Todas las Carreras
       </button>
       {majors.map((major) => (
         <button

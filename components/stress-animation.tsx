@@ -17,7 +17,7 @@ export function StressAnimation({ selectedMajor }: StressAnimationProps) {
 
   const weekColors = calculatePredominantColors(selectedMajor)
   const weekMajors = getWeekMajors(selectedMajor)
-  const displayMajor = selectedMajor || "all majors"
+  const displayMajor = selectedMajor || "Todas las Carreras"
 
   const handleStressClick = () => {
     if (isAnimating) return
@@ -51,7 +51,7 @@ export function StressAnimation({ selectedMajor }: StressAnimationProps) {
         disabled={isAnimating}
         className="mb-6 rounded-md bg-primary px-6 py-3 font-semibold text-primary-foreground transition-opacity hover:opacity-90 disabled:opacity-50"
       >
-        STRESS
+        ESTRÉS
       </button>
 
       {isAnimating && (
