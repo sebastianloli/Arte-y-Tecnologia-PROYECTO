@@ -56,18 +56,18 @@ export function StressAnimation({ selectedMajor }: StressAnimationProps) {
 
       {isAnimating && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center w-screen h-screen transition-colors"
+          className="fixed inset-0 z-50 w-screen h-screen transition-colors"
           style={{ backgroundColor, transitionDuration: `${DURATION_PER_WEEK}s` }}
         >
           {currentWeek > 0 && currentWeek <= WEEKS && (
-            <div className="text-center">
+            <div className="absolute top-6 right-6 text-right">
               <h2
-                className="text-6xl font-bold mb-4"
+                className="text-2xl font-bold mb-2"
                 style={{ color: backgroundColor === "white" ? "black" : "white" }}
               >
                 SEMANA {currentWeek}
               </h2>
-              <p className="text-3xl font-semibold" style={{ color: backgroundColor === "white" ? "black" : "white" }}>
+              <p className="text-lg font-semibold" style={{ color: backgroundColor === "white" ? "black" : "white" }}>
                 {displayMajor}
               </p>
             </div>
